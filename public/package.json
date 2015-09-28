@@ -1,0 +1,32 @@
+{
+  "name": "WelliGals",
+  "version": "1.0.0",
+  "description": "An online place for Russian speaking girls of Welligton to stay in touch",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/annavlz/WelliGals"
+  },
+  "author": "Anna Lezhikova <anna.v.l@gmail.com> ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annavlz/WelliGals/issues"
+  },
+  "homepage": "http://github.com/annavlz/WelliGals",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "gulp": "^3.9.0",
+    "gulp-run": "^1.6.11",
+    "gulp-watch": "^4.3.5",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.0",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "browserify": "^11.1.0",
+    "jsdom": "^6.5.1"
+  }
+}
