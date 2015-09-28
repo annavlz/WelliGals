@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>WelliGuls</title>
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+      <%= javascript_include_tag 'application' %>
+      <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav>
+      <% if current_user %>
+        Signed in as <%= current_user.name %>
+        <%= image_tag("http://graph.facebook.com/" + current_user.uid + "/picture") %>
+        <%= link_to "Sign Out", '/sign_out', method: :delete %>
+            <%= yield %>
+      <% else %>
+        <%= link_to "Login", "/auth/facebook" %>
+      <% end %>
+    </nav>
+
+  </body>
+</html>
