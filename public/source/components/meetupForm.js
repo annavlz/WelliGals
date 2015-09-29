@@ -1,28 +1,4 @@
-var MeetupCreate = React.createClass({
-  handleMeetupSubmit: function(meetup) {
-    $.ajax({
-      url: "/meetups",
-      dataType: 'json',
-      type: 'POST',
-      data: comment,
-      success: function(meetup) {
-        console.log('Meetup created');
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-  render: function() {
-    return (
-      <div className="createMeetup">
-        <h1>Create a meetup</h1>
-        <MeetupForm onMeetupSubmit={this.handleMeetupSubmit} />
-      </div>
-    );
-  }
-
-});
+var React = require("react")
 
 var MeetupForm = React.createClass({
   handleSubmit: function(e) {
@@ -39,7 +15,7 @@ var MeetupForm = React.createClass({
                                capacity: capacity });
 
     React.findDOMNode(this.refs.title).value = '';
-    React.findDOMNode(this.refs.description) = '';
+    React.findDOMNode(this.refs.description).value = '';
     React.findDOMNode(this.refs.place).value = '';
     React.findDOMNode(this.refs.date).value = '';
     React.findDOMNode(this.refs.duration).value = '';
@@ -55,13 +31,10 @@ var MeetupForm = React.createClass({
         <input type="date" placeholder="Date" ref="date" />
         <input type="number" placeholder="Duration" ref="duration" />
         <input type="number" placeholder="Capacity" ref="capacity" />
-        <input type="submit" value="Post" />
+        <input type="submit" value="Create" />
       </form>
     );
   }
 });
 
-React.render(
-  <MeetupCreate />,
-  document.getElementById('meetup-form')
-);
+module.exports = MeetupForm

@@ -4,7 +4,8 @@
   "description": "An online place for Russian speaking girls of Welligton to stay in touch",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "mocha tests",
+    "build": "browserify -t reactify -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
   },
   "dependencies": {
     "browserify": "^11.1.0",
-    "jsdom": "^6.5.1"
+    "jsdom": "^6.5.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
   }
 }
