@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "browserify": "^11.1.0",
+    "domready": "^1.0.8",
     "jsdom": "^6.5.1",
     "react": "^0.13.3",
     "reactify": "^1.1.1"

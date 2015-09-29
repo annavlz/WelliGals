@@ -1,3 +1,3 @@
 #! /bin/bash
 #make sure you have browserify installed globally with npm install -g browserify
-browserify -t reactify index.js -o bundle.js
+browserify -t reactify index.js -o ../app/assets/javascripts/bundle.js
