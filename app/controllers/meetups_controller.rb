@@ -1,7 +1,6 @@
 class MeetupsController < ApplicationController
 
   def create
-
       meetup = Meetup.create(meetup_params)
       meetup.user_id = current_user[:id]
       meetup.save
