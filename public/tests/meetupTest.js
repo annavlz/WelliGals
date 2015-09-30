@@ -4,19 +4,19 @@ var MeetupCreate = require('../source/components/meetupCreate')
 require('testdom')('<html><body></body></html>')
 // console.log(document)
 
-describe('CreateMeetup component', function() {
-  before('render and locate element', function() {
-    var renderedComponent = ReactTestUtils.renderIntoDocument(
-      <MeetupCreate />
-    )
-  })
+// describe('CreateMeetup component', function() {
+//   before('render and locate element', function() {
+//     var renderedComponent = ReactTestUtils.renderIntoDocument(
+//       <MeetupCreate />
+//     )
+//   })
 
-  var formComponent = ReactTestUtils.findRenderedDOMComponentWithTag(
-    renderedComponent,
-    'form'
-  )
+//   var formComponent = ReactTestUtils.findRenderedDOMComponentWithTag(
+//     renderedComponent,
+//     'form'
+//   )
 
-  this.formElement = formComponent.getDOMNode()
-})
+//   this.formElement = formComponent.getDOMNode()
+// })
 
-it()
+// it()
