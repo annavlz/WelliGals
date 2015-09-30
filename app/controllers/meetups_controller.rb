@@ -14,7 +14,8 @@ class MeetupsController < ApplicationController
                    :description,
                    :date,
                    :place,
-                   :capacity)
+                   :capacity,
+                   :duration)
   end
 
 end
