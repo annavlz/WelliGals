@@ -2,11 +2,9 @@ class MeetupsController < ApplicationController
 
   def create
 
-      meetup = Meetup.create(meetup_params)
-      meetup.user_id = current_user[:id]
-      meetup.save
+    meetup = Meetup.create(meetup_params.merge(user: user))
 
-      render json: meetup, status: 201
+    render json: meetup, status: 201
   end
 
   private
