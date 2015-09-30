@@ -17,6 +17,9 @@
     "url": "https://github.com/annavlz/WelliGals/issues"
   },
   "homepage": "http://github.com/annavlz/WelliGals",
+  "browser": {
+    "jsdom": false
+  },
   "devDependencies": {
     "chai": "^3.3.0",
     "gulp": "^3.9.0",
@@ -30,7 +33,9 @@
     "browserify": "^11.1.0",
     "domready": "^1.0.8",
     "jsdom": "^6.5.1",
+    "lodash": "^3.10.1",
     "react": "^0.13.3",
-    "reactify": "^1.1.1"
+    "reactify": "^1.1.1",
+    "testdom": "^2.0.0"
   }
 }
