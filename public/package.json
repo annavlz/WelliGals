@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests",
-    "build": "browserify -t reactify -o bundle.js"
+    "build": "browserify -t reactify index.js -o ../app/assets/javascripts/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -22,20 +22,18 @@
   },
   "devDependencies": {
     "chai": "^3.3.0",
-    "gulp": "^3.9.0",
-    "gulp-run": "^1.6.11",
-    "gulp-watch": "^4.3.5",
     "mocha": "^2.3.3",
     "sinon": "^1.17.0",
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25",
     "browserify": "^11.1.0",
     "domready": "^1.0.8",
     "jsdom": "^6.5.1",
-    "lodash": "^3.10.1",
+    "mocha-babel": "^3.0.0",
     "react": "^0.13.3",
-    "reactify": "^1.1.1",
-    "testdom": "^2.0.0"
+    "reactify": "^1.1.1"
   }
 }

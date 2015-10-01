@@ -4,10 +4,14 @@ var MeetupCreate = require('./source/components/meetupCreate')
 var domready = require('domready')
 
 domready(function () {
- React.render(
-  React.createElement(MeetupCreate, null),
-  document.getElementById('meetup-form')
-  )
+  $('#new-meetup').click(function(e) {
+    e.preventDefault()
+    console.log('test');
+    React.render(
+      React.createElement(MeetupCreate, null),
+      document.getElementById('meetup-form')
+    )
+  })
 })
 
 },{"./source/components/meetupCreate":158,"domready":2,"react":157}],2:[function(require,module,exports){

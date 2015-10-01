@@ -3,9 +3,12 @@ var MeetupCreate = require('./source/components/meetupCreate')
 var domready = require('domready')
 
 domready(function () {
- React.render(
-  <MeetupCreate />,
-  document.getElementById('meetup-form')
-  )
+  $('#new-meetup').click(function(e) {
+    e.preventDefault()
+    React.render(
+      <MeetupCreate />,
+      document.getElementById('meetup-form')
+    )
+  })
 })
 
